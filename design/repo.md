@@ -52,3 +52,11 @@ require several re-commits to test properly.
 We use GitHub Actions exclusively for things such as automatic labelling and
 workflows that would not be possible without it, such as our own
 `gitcord-release-changelogger`.
+
+The mandatory workflows for each project are as follows:
+- Unit testing for all applicable platforms and versions
+- Linting
+- Integrations such as LGTM
+- Our automatic labelling, and workflows bundled with [kludge-cs/.github]
+
+[kludge-cs/.github]: https://github.com/kludge-cs/.github
