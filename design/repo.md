@@ -11,26 +11,26 @@ performance (patches vs diff streams), more effective branching structure
 
 Kludge Cyber Systems makes use of the following branch architecture.
 ```
-master  -*-*-*-*-*-*-
+main    -*-*-*-*-*-*-
 staging  `-*-*-*-*-'
 t*/*       `-*-*-'
 ```
 (`t*` represents a commit type under the Angular convention, and `*` represents
-a hyphenated ASCII summary of the changes)
+a hyphenated brief ASCII summary of the changes)
 
 **Note**: The staging branch is optional, depending on the release cycle of the
 project. If the staging branch is in use, it is used for change aggregation and
 pre-releases. If it is not, the release cycle resolves solely around primary
-releases on master. This is done to allow pre-release testing as well as better
+releases on main. This is done to allow pre-release testing as well as better
 control over releases for larger projects.
 
 ### Merging - Rejoining History
 
-The protocol for merging into master is as follows:
+The protocol for merging into main is as follows:
 
 1. Ensure all CI checks have passed
 2. Ensure there are no remaining unresolved reviews or requested changes
-3. Ensure all codeowner reviews have been completed
+3. Ensure all code owner reviews have been completed
 4. Ensure there are at least two approvals
 
 The protocol for merging into staging is as follows:
